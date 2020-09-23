@@ -1,0 +1,29 @@
+VERSION 5.00
+Begin VB.PropertyPage AIAbt 
+   Caption         =   "About/Help"
+   ClientHeight    =   3690
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5160
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3690
+   ScaleWidth      =   5160
+   Begin VB.TextBox Text1 
+      Height          =   3690
+      Left            =   0
+      Locked          =   -1  'True
+      MultiLine       =   -1  'True
+      ScrollBars      =   2  'Vertical
+      TabIndex        =   0
+      Text            =   "AIAbout.pgx":0000
+      Top             =   0
+      Width           =   5160
+   End
+End
+Attribute VB_Name = "AIAbt"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
