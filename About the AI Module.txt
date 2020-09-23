@@ -1,0 +1,78 @@
+About the Artificial Intelligence Control (AIUnit)
+By Michael Dzicek (webmaster@reviewcenter.com)
+========= ======== ======= ====== ===== ==== === == =
+Essentially, the Ai unit is a control that takes a given input and compares it to an internal list of possible statements and thier responses. However this can be a very tedious process, as when people type things on thier computers, they tend to get lazy and use various forms of computer slang. The unit takes account for this and tries to correct the language of the input to some extent so that is easier to process, and makes the unit much more likely to find a match.
+========= ======== ======= ====== ===== ==== === == =
+Commands:
+--------- -------- ------- ------ ----- ---- --- -- -
+AddStatement
+
+Description: Adds/Updates a Statement/Response combination to the Unit's internal Statement/Response list.
+
+Usage: AIUnit.AddStatement(StatementToGoIn as String, StatementToGoOut as String)
+
+Parameters:	StatementToGoIn - A Statement to add to the list of possible statements for the unit to respond to.
+		StatementToGoOut - The response to add to the response list as the answer for StatementToGoIn
+
+Returns: Nothing
+--------- -------- ------- ------ ----- ---- --- -- -
+CleanUpThisMess
+
+Description: Processes the input to a form that is easier for the unit to seach through the Statements/Response list.
+
+Usage: AIUnit.CleanUpThisMess(Mess as String)
+
+Parameters:	Mess - A string that is input for the unit to clean up.
+
+Returns: A "cleaned up" version of the input statement.
+--------- -------- ------- ------ ----- ---- --- -- -
+DumpLists
+
+Description: Clears out the unit's internal lists of possible statements and responses.
+
+Usage: AIUnit.DumpLists
+
+Parameters: 	None
+
+Returns: None
+--------- -------- ------- ------ ----- ---- --- -- -
+GetStatement
+
+Description: Retrieves a Statement/Response combination from the internal lists of the AI unit.
+
+Usage: AIUnit.Getstatement(Index as Long)
+
+Parameters: 	Index - An integer that species the entry number in the lists to be retieved.
+
+Returns: An AIStatement Variable (with .Input and .Response properties) where each property name is representative of the value it contains.
+--------- -------- ------- ------ ----- ---- --- -- -
+GoAI
+
+Description: Processes The given input and returns the response it has in the list if one is found.
+
+Usage: AIUnit.GoAI(AInput as string)
+
+Parameters:	AInput - Statement to chech against the unit's internal lists in order to find a response.
+
+Returns: The corresponding response to the statement if one is found.  Returns a zero-length variable if nothing is found.
+--------- -------- ------- ------ ----- ---- --- -- -
+RemoveStatement
+
+Description: Removes a Statement/Response combination from the unit's internal lists.
+
+Usage: AIUnit.RemoveStatement(Index as Long)
+
+Parameters: 	Index - An integer that species the entry number in the lists to be removed.
+
+Returns: None
+--------- -------- ------- ------ ----- ---- --- -- -
+StatementAmount
+
+Description: Returns the number of Statement/response combinations in the unit's internal lists.
+
+Usage: AIUnit.StatementAmount
+
+Parameters:	None
+
+Returns: The number of entries in the unit's internal lists.
+--------- -------- ------- ------ ----- ---- --- -- -
